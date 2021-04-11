@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="stylesheet" href="style.css">
+
+    <title>Photographer</title>
+  </head>
+  <body>
+<!-- navbar  -->
+
+    <div class="topnav" id="myTopnav">
+      <a href="#myTopnav" class="active">Home</a>
+      <a href="#gallery">Gallery</a>
+      <div class="dropdown" id="dropdownn">
+        <button class="dropbtn"> <a href="#dropdown">Our Team </a>
+          <i class="fa fa-caret-down"></i>
+
+        </button>
+        <div class="dropdown-content">
+          <a href="#"> Team 1</a>
+          <a href="#"> Team 2</a>
+          <a href="#"> Team 3</a>
+        </div>
+      </div> 
+      <a href="#pricing">Pricing</a>
+      
+      <a href="#contact">Contact</a>
+      
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    
+    <!-- middle body  -->
+    <div class="bg" image-fluid>
+      <div class="hero-text">
+        <h1 style="font-size:50px">I am Eli Doe</h1>
+        <p>And I'm a Photographer</p>
+        <button>Hire me</button>
+      </div>
+    </div>
+
+    <!-- chat box -->
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<!-- Header -->
+<div class="header" id="myHeader">
+  <h1>Gallery</h1>
+  <p>Click on the buttons to change the grid view.</p>
+  <button class="btn" onclick="one()">1</button>
+  <button class="btn" onclick="two()">2</button>
+  <button class="btn active" onclick="four()">4</button>
+</div>
+
+<!-- Photo Grid -->
+<div id="gallery"> 
+  
+  <div class="column">
+    <img src="image/c.jpg" style="width:100%">
+    <img src="image/ccc.jpg" style="width:100%">
+    <img src="image/cccc.jpg" style="width:100%">
+    
+  </div>
+  <div class="column">
+    <img src="image/zz.jpg" style="width:100%">
+    <img src="image/zzzz.jpg" style="width:100%">
+    <img src="image/zzzzz.jpg" style="width:100%">
+    
+    
+  </div>  
+  <div class="column">
+    <img src="image/xx.jpg" style="width:100%">
+    <img src="image/xxx.jpg" style="width:100%">
+    <img src="image/xxxx.jpg" style="width:100%">
+   
+  </div>
+  <div class="column">
+    <img src="image/z.jpg" style="width:100%">
+    <img src="image/ccccc.jpg" style="width:100%">
+    <img src="image/cc.jpg" style="width:100%">
+    
+    
+  </div>
+</div>
+
+<!-- our team  -->
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi recusandae repellat laborum mollitia autem, iste temporibus, minus tenetur totam quos hic praesentium porro nisi, ut quod placeat minima qui voluptate vel maiores? Modi, iste aliquam unde nisi in eaque, nobis tempora dolorum distinctio ad, qui sequi quibusdam beatae magni placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde tenetur fugiat possimus odio molestias, in hic ipsa nesciunt dolores? Amet cum dolor unde blanditiis nam iste animi explicabo aliquid debitis tenetur porro suscipit eveniet rerum voluptate est et illum odio dolorum nisi vitae, expedita illo, consequatur sit? Quia, suscipit id.</p>
+  <p>Lorem ipsum dolor sit amet consectetur  rerum laborum ipsum officia quae rem perferendis laboriosam cum.</p>
+</div>
+
+<h2 id="dropdown" style="text-align:center">Our Team</h2>
+<div id="row">
+  <div class="column">
+    <div class="card">
+      <img src="image/ooo.jpg" alt="Jane" style="width:33.3%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>jane@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="image/oo.jpg" alt="Mike" style="width:33.3%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>mike@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="image/o.jpg" alt="John" style="width:33.3%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+    <br>
+<br>
+  </div>
+  
+</div>
+
+
+<!-- Pricing -->
+<h2 style="text-align:center">Responsive Pricing Tables</h2>
+<p style="text-align:center">Resize the browser window to see the effect.</p>
+
+<div class="columns">
+  <ul class="price" id="pricing">
+    <li class="header">Basic</li>
+    <li class="grey">$ 9.99 / year</li>
+    <li>10GB Storage</li>
+    <li>10 Emails</li>
+    <li>10 Domains</li>
+    <li>1GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Contact</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header" style="background-color:#4CAF50">Pro</li>
+    <li class="grey">$ 24.99 / year</li>
+    <li>25GB Storage</li>
+    <li>25 Emails</li>
+    <li>25 Domains</li>
+    <li>2GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Contact</a></li>
+  </ul>
+</div>
+
+<div class="columns">
+  <ul class="price">
+    <li class="header">Premium</li>
+    <li class="grey">$ 49.99 / year</li>
+    <li>50GB Storage</li>
+    <li>50 Emails</li>
+    <li>50 Domains</li>
+    <li>5GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Contact</a></li>
+  </ul>
+  <br>
+<br>
+</div>
+
+
+
+<!-- contact form -->
+
+<div class="container" id="contact">
+  <div style="text-align:center">
+    <br>
+    <h1>Contact Us</h1>
+    
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+     <div class="column">
+      <!-- <img src="image/team.jpg" > -->
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="cname">Country</label>
+        <input type="text" id="cname" name="countryname" placeholder="Country name..">
+        
+        
+        <!-- <label for="country">Country</label>
+        
+        
+        
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select> -->
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something sweet.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+<footer class="footer">
+  @copyright by itstumpa 2021
+</footer>
+<script src="/index.js"></script>
+
+  </body>
+</html>
